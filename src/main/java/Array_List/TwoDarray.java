@@ -12,7 +12,7 @@ public class TwoDarray {
 		//arry[3]=40;
 		System.out.println(arry.length);
 		
-		Object data[][];
+		Object data[][] = null;
 		
 		data = new Object[3][2];
 		

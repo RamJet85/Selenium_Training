@@ -24,7 +24,7 @@ public class DragandDrop {
 		
 		By target = By.xpath("//div[@id='droppable']");
 		//In actions class we should pass the driver
-		// Drag and drop is only within in the webpage 
+		// Drag and drop is only within in the web page 
 
 		Actions act = new Actions(driver);
 		
