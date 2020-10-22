@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test 2 Suite">
+  <test name="HubSpot Test">
+    <classes>
+      <class name="app.test.HubSpotTest"/>
+      
+    </classes>
+  </test> 
+  <test name="Pims Test">
+    <classes>
+      
+      <class name="app.test.PimsTest"/>
+    </classes>
+  </test> 
+</suite> 

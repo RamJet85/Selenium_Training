@@ -1,7 +1,5 @@
 package Parallel_Testing;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 

@@ -50,10 +50,8 @@ public class TestNGAnnotations {
 	// If u want to see the more info of the execution report max value is 10
 	//Suppose if u combine all tc's without test blocks, in BT & AT execution only done in once, so u can't execute combine
 	// so can divide into blocks
-	
-	
 	// If suppose u have 2 test blocks it will execute in 2 chrome browsers at a time
-    // verbose used to if u want to see the more info of the ex report on the console verbose range is 1 to 10-->
+    // verbose used to if u want to see the more info of the console report on the console verbose range is 1 to 10-->
 	
 	// in a test block if u have no of classes u should give parallel as classes eg :thread-count ="2" parallel = "classes"
 	

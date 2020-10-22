@@ -1,6 +1,5 @@
 package JavaScriptExecutor;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -31,9 +30,10 @@ public class JavaScriptExecutor {
 //		System.out.println(Utils.getPageInnerText());
 		
 			
-		//Utils.generateAlert("This is Ram");
+		Utils.generateAlert("This is Ram");
 		
-		Utils.drawBorder(driver.findElement(By.xpath("//input[@id='login-email']")));
+		
+		//Utils.drawBorder(driver.findElement(By.xpath("//input[@id='login-email']")));
 		
 		//Utils.scrollPagedown();
 			

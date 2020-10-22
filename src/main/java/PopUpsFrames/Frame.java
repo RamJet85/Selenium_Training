@@ -28,5 +28,9 @@ public class Frame {
 		
 
 	}
+	
+	public void navigateToFrame(String name) {
+		driver.switchTo().frame(name);
+	}
 
 }

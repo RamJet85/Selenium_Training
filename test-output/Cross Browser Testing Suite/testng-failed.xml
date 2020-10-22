@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cross Browser Testing Suite]">
+  <test thread-count="5" name="HubSpot Test(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="Parallel_Testing.HubSpotTest">
+        <methods>
+          <include name="contacts"/>
+          <include name="login"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Parallel_Testing.HubSpotTest -->
+    </classes>
+  </test> <!-- HubSpot Test(failed) -->
+  <test thread-count="5" name="BoxLogin Test(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="Parallel_Testing.BoxLogin">
+        <methods>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Parallel_Testing.BoxLogin -->
+    </classes>
+  </test> <!-- BoxLogin Test(failed) -->
+  <test thread-count="5" name="PimsTest Test(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="Parallel_Testing.PimsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="getTitle"/>
+        </methods>
+      </class> <!-- Parallel_Testing.PimsTest -->
+    </classes>
+  </test> <!-- PimsTest Test(failed) -->
+</suite> <!-- Failed suite [Cross Browser Testing Suite] -->

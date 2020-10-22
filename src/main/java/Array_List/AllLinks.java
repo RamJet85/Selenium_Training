@@ -13,7 +13,7 @@ public class AllLinks {
 
 	public static void main(String[] args) {
 
-		// findElement () will return only single WebElement and if that element is not
+		// findElement() will return only single WebElement and if that element is not
 		// located or we use some wrong selector then it will throw NoSuchElement
 		// exception.
 
@@ -43,5 +43,6 @@ public class AllLinks {
 			}
 		}
 	}
-
 }
+
+
