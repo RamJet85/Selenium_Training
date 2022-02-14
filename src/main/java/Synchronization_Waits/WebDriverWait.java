@@ -14,16 +14,22 @@ public class WebDriverWait {
 
 	public static void main(String[] args) {
 		
+		/*Synchronization: when two or more components involved to perform any action, 
+		we expect these components to work together with the same pace. The co-ordination between 
+		these components to run paralelly is called Synchronization.*/
+		
 		//Explicit wait is not available in the form of keyword or method, It's not a global wait
 		//It is available in the form of 2 things webdriver wait it is a child of (FW) and fluent wait-->implements wait interface
-        // It's a custom wait, custom wait with webdriver wait for a specific webelement, it's only applicable for specific webelement
-		// It is applicable for both We and non We alert title url's
+        // It's a custom wait, webdriver wait it's only applicable for specific webelement
+		// It is applicable for both Web and non Web elements alert title url's
+		// It is the custom one. It will be used if we want the execution to wait for some time until some condition achieved
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://app.hubspot.com/login?");
 		WebDriverWait wt = new WebDriverWait();
+		
 //		org.openqa.selenium.support.ui.WebDriverWait wait = new org.openqa.selenium.support.ui.WebDriverWait(driver, 10);
 //		System.out.println(wait.until(ExpectedConditions.titleContains("Login")));
 //		System.out.println(wait.until(ExpectedConditions.titleIs("HubSpot Login")));
@@ -66,8 +72,10 @@ public class WebDriverWait {
 	public WebElement waitForElementPresent(By locator,int timeUnit) {
 		
 		org.openqa.selenium.support.ui.WebDriverWait wait = new org.openqa.selenium.support.ui.WebDriverWait(driver, timeUnit);
+		//WebDriverWait wait = new WebDriverWait(driver, timeUnit);
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		//until method returns webelement
+		
 		
 	}
 	public String waitForTitlePresent(String titleValue, int timeUnit) {

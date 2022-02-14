@@ -1,6 +1,7 @@
 package DropDownSelection;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,7 @@ public class JQueryDd {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.jquery-az.com/jquery/demo.php?ex=48.0_1");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(2000);
 
 		By SelectOptions = By.xpath("//div[@class='ms-options-wrap']");
@@ -29,12 +31,12 @@ public class JQueryDd {
 		
 		JQueryDd Dropdown = new JQueryDd();
 		//multi select
-		Dropdown.Single_Multi_AllSelectDropDown(ListofOptions, "California","Kentucky","Maine");
+		//Dropdown.Single_Multi_AllSelectDropDown(ListofOptions, "California","Kentucky","Maine");
         //Single select
 		//Dropdown.Single_Multi_AllSelectDropDown(ListofOptions, "alaska");
 
 		//All values select
-		//Dropdown.Single_Multi_AllSelectDropDown(ListofOptions, "all");
+		Dropdown.Single_Multi_AllSelectDropDown(ListofOptions, "all");
 		
 		
 		}

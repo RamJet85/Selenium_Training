@@ -21,24 +21,17 @@ public class Listofcricket {
 		
 		driver.get("https://www.cricbuzz.com/live-cricket-scorecard/23256/eng-vs-ire-3rd-odi-ireland-tour-of-england-2020");
 		
-		List<WebElement> list = driver.findElements(By.xpath("//a[text()=' Moeen ']//parent::div//following-sibling::div"));
+		//List<WebElement> list = driver.findElements(By.xpath("//a[text()=' Moeen ']//parent::div//following-sibling::div"));
 		
-		List<WebElement> xpath = getList("Roy");
+		List<WebElement> xpath = getList("Moeen");
 		
 		for (WebElement ele : xpath) {
+			
 			System.out.println(ele.getText());
 			
 		}
 		
-		/*int size =list.size();
-		System.out.println(size);
 		
-		for(int i=1;i<size;i++) {
-
-			String text =list.get(i).getText();
-			System.out.println(text);
-			
-		}*/
 	}
 	
 	public static List<WebElement> getList(String playerName) {

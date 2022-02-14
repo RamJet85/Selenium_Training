@@ -14,8 +14,7 @@ public class AllLinks {
 	public static void main(String[] args) {
 
 		// findElement() will return only single WebElement and if that element is not
-		// located or we use some wrong selector then it will throw NoSuchElement
-		// exception.
+		// located or we use some wrong selector then it will throw NoSuchElement exception.
 
 		// findElements() will return List of WebElements – for this we need to give
 		// locator in such a way that it can find multiple elements and will return you
@@ -28,7 +27,7 @@ public class AllLinks {
 		List<WebElement> list = driver.findElements(By.tagName("a"));
 		
 		// If we have any empty links which are not having text then we should use
-		// isempty method,only it will print which are having links
+		// is empty method,only it will print which are having links
 		// Let us assume if text is empty, condition is true ! is make the entire condition as false then it is not print the text
 		// Let us assume if text is not empty, condition is false ! is make the entire
 		// condition as true then it is print the text ! will make condition is true
@@ -43,6 +42,7 @@ public class AllLinks {
 			}
 		}
 	}
+
 }
 
 

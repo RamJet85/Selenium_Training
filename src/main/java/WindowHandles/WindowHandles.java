@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,9 +23,10 @@ public class WindowHandles { // browser pop up tabs
 		WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://popuptest.com/goodpopups.html");
+		driver.get("https://smartbear.com/blog/how-to-handle-multiple-tabs-in-selenium-webdriver/");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//a[text()='Good PopUp #2']//parent::b//a[text()='Good PopUp #1']")).click();
+		driver.findElement(By.xpath("//a[text()='Selenium 101 Series']")).click();
 		// set will contain unique value, window id's are unique values
 		Set<String> windows = driver.getWindowHandles(); // return window id's of the available windows
 		//windowhandles fetch window id's

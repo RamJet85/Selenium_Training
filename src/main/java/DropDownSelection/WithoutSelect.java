@@ -67,22 +67,6 @@ public class WithoutSelect {
 		}
 		
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }

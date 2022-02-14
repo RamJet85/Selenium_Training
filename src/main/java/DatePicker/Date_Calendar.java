@@ -20,6 +20,7 @@ public class Date_Calendar {
 	
 	
 	By date = By.xpath("//input[@placeholder='Departure']");
+	
 	String dateValue = "9/14/2020";
 	//driver.findElement(date).click();
 	Date_Calendar.dateSelectByJs(driver, date, dateValue);

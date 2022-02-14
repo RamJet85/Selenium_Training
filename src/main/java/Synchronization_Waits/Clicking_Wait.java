@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -14,6 +15,7 @@ public class Clicking_Wait {
 static WebDriver driver;
 	
 	public static void main(String[] args) {
+		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -22,6 +24,7 @@ static WebDriver driver;
 		
 		By SignUp = By.linkText("Sign up");
 
+		
 		
 		Clicking_Wait wt = new Clicking_Wait();
 		//wt.waitForElementToBeClickable(SignUp, 5).click();

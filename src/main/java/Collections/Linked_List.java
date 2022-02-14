@@ -5,6 +5,7 @@ import java.util.LinkedList;
 public class Linked_List {
 
 	public static void main(String[] args) {
+		
 		//Linked List is a very commonly used linear data structure which consists of group of nodes in a sequence.
 
         //Each node holds its own data and the address of the next node hence forming a chain like structure.

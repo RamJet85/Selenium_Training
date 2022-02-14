@@ -1,12 +1,12 @@
 package WindowHandles;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -19,13 +19,14 @@ public class WH_List {
 		WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://popuptest.com/goodpopups.html");
+		driver.get("https://smartbear.com/blog/how-to-handle-multiple-tabs-in-selenium-webdriver/");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//a[text()='Good PopUp #2']//parent::b//a[text()='Good PopUp #1']")).click();
+		driver.findElement(By.xpath("//a[text()='Selenium 101 Series']")).click();
 		
 		Set<String> handles =driver.getWindowHandles();
-		//we can convert the list into set
-		ArrayList<String> list = new ArrayList<String>(handles);
+		//we can convert the set into list
+		List<String> list = new ArrayList<String>(handles);
 		System.out.println(list.size());
 		
 		String parentID = list.get(0);
@@ -39,8 +40,9 @@ public class WH_List {
 		System.out.println(driver.switchTo().window(parentID).getTitle());
 		driver.quit();
 		
-		WH_List wh = new WH_List();
-		wh.switchToChildBrowserWindow(childID);
+		
+		//WH_List wh = new WH_List();
+		//wh.switchToChildBrowserWindow(childID);
 		
 
 		

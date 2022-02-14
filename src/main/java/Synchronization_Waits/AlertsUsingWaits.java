@@ -27,7 +27,7 @@ public class AlertsUsingWaits {
 //		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 //		System.out.println(alert.getText());
 //		alert.accept();
-		//handle alert using explicitly wait, Don't need to switch, alertIsPresent will internally check and accept the alert
+//      handle alert using explicitly wait, Don't need to switch, alertIsPresent will internally check and accept the alert
 		
 		AlertsUsingWaits wt = new AlertsUsingWaits();
 		Alert alert = wt.waitForAlertToBePresent(loc, 5);

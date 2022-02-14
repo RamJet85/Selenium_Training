@@ -23,7 +23,7 @@ public class Xpath_Advanced {
 
 	}
 	
-	//input[@id='continue']//ancestor::div acestor will give us all the grand parents and parents
+	//input[@id='continue']//ancestor::div ancestor will give us all the grand parents and parents
 	
 	//span[text()='Ram']//ancestor::td//preceding-sibling::td//input[@type='checkbox']/..
 	

@@ -22,9 +22,11 @@ public class GoogleLinks {
 		
 		GoogleLinks links = new GoogleLinks();
 		links.doLinkClick(list, "తెలుగు");
+		
+		System.out.println(list.get(4));
 
 	}
-	
+
 	
 	
 	
@@ -35,23 +37,13 @@ public class GoogleLinks {
 		for (WebElement ele : linklist) {
 			String linktext = ele.getText();
 			System.out.println(linktext);
-			if (linktext.equals(value)) {
+			if (linktext.equalsIgnoreCase(value)) {
 				ele.click();
 				break;
 			}
-			
-			
 		}
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+}
+
 	
 
-}
