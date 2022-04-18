@@ -7,7 +7,7 @@ public class Xpath_Advanced {
 		// / slash will give only direct child elements single slash is always used for to capture the direct child elements associated with parent
 		// // it will both direct & indirect child elements which are associated with parents
 		
-		// backward travering //div//a[text()='Scorecard']/../.. cricbuzz
+		// backward traversing //div//a[text()='Scorecard']/../.. cricbuzz
 		//input[@id='continue']//parent::span
 		// to do the backward simple use /.. it is not available in CSS
 		//input[@id='username']/../../.. backward traversing immediately it will go to it's parent 

@@ -13,6 +13,11 @@ public class ImplicitWait {
 
 	public static void main(String[] args) {
 
+		/*Synchronization: when two or more components involved to perform any action, 
+		we expect those components to work together with the same pace. The co-ordination between 
+		these components to run parallelly is called Synchronization.*/
+		
+		
 		//Thread.sleep is a static wait, If the element is found within 2 seconds u should wait for remaining seconds
 		//Implicit wait is a dynamic wait
 		//It's Global wait, Once u applied it will applicable for all the web elements by default, 

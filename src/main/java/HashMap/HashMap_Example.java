@@ -8,13 +8,14 @@ public class HashMap_Example {
 
 	public static void main(String[] args) {
 		
-		// Hashmap with different logins
+		//Hashmap with different logins
 		
 		map = new HashMap<String, String>();
 		
 		map.put("Fraudshare", "ram@user.com : ram@123");
 		map.put("CompanyAdmin", "ram@cadmin.com : cadmin@123");
 		map.put("LLGAdmin", "ram@llgadmin.com : llgadmin@123");
+		
 		
 		HashMap_Example hash = new HashMap_Example();
 		

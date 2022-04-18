@@ -23,7 +23,7 @@ public class GoogleSuggestions {
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Ramcharan");
 		Thread.sleep(3000);
 		
-		By suggestions = By.xpath("//ul[@class='erkvQe']/li//div[@class='sbl1']");
+		By suggestions = By.xpath("//div[@class='OBMEnb']/ul/li");
 		
 		List<WebElement> list = driver.findElements(suggestions);
 		

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Cross Browser Testing Suite]">
+<suite name="Failed suite [Cross Browser Testing Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="HubSpot Test(failed)">
-    <parameter name="browser" value="ie"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="Parallel_Testing.HubSpotTest">
         <methods>
@@ -15,7 +15,7 @@
     </classes>
   </test> <!-- HubSpot Test(failed) -->
   <test thread-count="5" name="BoxLogin Test(failed)">
-    <parameter name="browser" value="ie"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="Parallel_Testing.BoxLogin">
         <methods>

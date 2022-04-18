@@ -26,6 +26,7 @@ public class MoveToElement {
 		By Menu = By.xpath("//a[@id='highlight-addons']");
 
 		Actions act = new Actions(driver);
+		
 
 		act.moveToElement(driver.findElement(Menu)).perform();
 		

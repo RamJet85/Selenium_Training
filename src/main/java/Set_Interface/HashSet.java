@@ -19,6 +19,7 @@ public class HashSet {
 		System.out.println(hs);
 		
 		System.out.println(hs.contains("sushma"));
+		System.out.println("for each loop");
 		
 		// Print using for each loop 
 		for (Object e : hs) {
@@ -27,7 +28,7 @@ public class HashSet {
 		}
 		
 		// Print using iterator
-		
+		System.out.println("using iterator");
 		Iterator<Object> it = hs.iterator();
 		while(it.hasNext()){
 			System.out.println(it.next());

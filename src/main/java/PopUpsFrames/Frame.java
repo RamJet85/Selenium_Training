@@ -20,11 +20,11 @@ public class Frame {
 		
 		// Using index it's default overloading method
 		driver.switchTo().frame(0);
-		//Using name or Id
+		//Using name of the frame or Id or webelement
 		//driver.switchTo().frame("age");
 		By frame = By.xpath("//input[@id='age']");
 		driver.findElement(frame).sendKeys("23");
-		//driver.switchTo().parentFrame();
+		driver.switchTo().parentFrame();
 		
 		System.out.println(driver.findElement(By.xpath("//div[@class='ui-tooltip-content']")).getText());
 		driver.switchTo().defaultContent();

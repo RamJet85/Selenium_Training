@@ -1,32 +1,34 @@
 package HashMap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Test {
 
 	public static void main(String[] args) {
 		
 		
-		String obj = Test.hashMap().get(1);
-		System.out.println(obj);
+		Map<Integer, String> hmap = new HashMap<Integer, String>();
 		
-		System.out.println(obj.split(":")[0]);
-		System.out.println(obj.split(":")[1].trim());
-		//System.out.println(obj.split(":")[3].trim());
+		hmap.put(1, "Ram");
+		hmap.put(null, "Taui");
+		hmap.put(2, "diamond");
+		hmap.put(3, "slowq");
+		hmap.put(null, "wara");
+		
+		
+		//to iterate the hashmap we should user iterator or entryset
+		
+		for (Map.Entry<Integer, String> e : hmap.entrySet()) {
+			
+			System.out.println(e.getKey()+" "+e.getValue());
+			
+		}
+		
 		
 		
 	}
 	
-	public static HashMap<Integer,String> hashMap(){
-		
-		HashMap<Integer, String> map = new HashMap<Integer, String>();
-		map.put(1, "Ram : 9492567100");
-		map.put(2, "Hari : 457645868");
-		
-		return map;
-		
-		
-		
-	}
+	
 
 }

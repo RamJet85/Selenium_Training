@@ -1,10 +1,12 @@
 package Constructor;
 
 public class Constructor {
+	
 //	Constructor is used to perform initialization of an object
 //	Initialization means while creating the object we should perform initialization of the object
 //	Whenever the object got created all the(props) instance variables photo copy will be given to object This means current object
-    int age;
+   
+	int age;
 	String name;
 	double salary;
 	
@@ -21,10 +23,12 @@ public class Constructor {
 		this.salary = salary;
 	}
 	
-	public void calling() {
+	public static void calling() {
 		System.out.println("calling");
 	}
 	public static void main(String[] args) {
+		
+		calling();
 		
 		Constructor ct = new Constructor("Ram");
 		System.out.println(ct.name);
@@ -37,7 +41,7 @@ public class Constructor {
 		System.out.println(ct1.age+ " "+ct1.name);
 		
 		Constructor ct3 = new Constructor(23, "Anusha", 12.65);
-		System.out.println(ct3.name+ " "+ct3.age+" "+ct3.salary);
+		System.out.println(ct3.name+" "+ct3.age+" "+ct3.salary);
 		
 		}
 	

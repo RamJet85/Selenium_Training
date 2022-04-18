@@ -8,8 +8,9 @@ public class Xpath_Basic {
 		//2 types 1.Absolute xpath 2. Relative xpath
 		//1. It is the direct way to find the element.But the disadvantage is 
 		//if any changes are made in the path of the element then the xpath gets failed starts with forward slash /
+		//which means you can select the element from the root node
 	    //relative: it's a custom Xpath, the path starts from the middle of the HTML dom structure, it starts with // 
-		//which means it can search the element anywhere at the webpage
+		//which means you can search the element anywhere at the webpage
 		//Htmltag[@attribute1='value1']
 		//Htmltag[@attribute1='value1'and @att2='value2']
 		

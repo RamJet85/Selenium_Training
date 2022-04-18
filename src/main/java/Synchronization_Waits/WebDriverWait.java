@@ -15,14 +15,43 @@ public class WebDriverWait {
 	public static void main(String[] args) {
 		
 		/*Synchronization: when two or more components involved to perform any action, 
-		we expect these components to work together with the same pace. The co-ordination between 
+		we expect those components to work together with the same pace. The co-ordination between 
 		these components to run paralelly is called Synchronization.*/
+	
+	//Inplicit wait	
 		
-		//Explicit wait is not available in the form of keyword or method, It's not a global wait
-		//It is available in the form of 2 things webdriver wait it is a child of (FW) and fluent wait-->implements wait interface
-        // It's a custom wait, webdriver wait it's only applicable for specific webelement
-		// It is applicable for both Web and non Web elements alert title url's
-		// It is the custom one. It will be used if we want the execution to wait for some time until some condition achieved
+//Thread.sleep is a static wait, If the element is found within 2 seconds u should wait for remaining seconds
+//Implicit wait is a dynamic wait
+//It's Global wait, Once u applied it will applicable for all the web elements by default, 
+//It's not applicable for non web elements like title, Url, alerts it is the disadvantage, title is the browser property
+//Imp wait is can't wait for url
+//the moment u write FE/FEs find ele or elements the implicit wait is applicable 
+//suppose u given 20 seconds wait to find the element but the element found within 5 seconds the rest of the seconds will be ignored
+//if not found within the given time it will throw NoSuchelEmentException
+//u can override the implicit wait it will become the global wait
+				
+   //Explicit wait:
+		
+//Explicit wait is not available in the form of keyword or method, It's not a global wait
+//It is available in the form of 2 things webdriver wait it is a child of (FW) and fluent wait-->implements wait interface
+// It's a custom wait, webdriver wait it's only applicable for specific webelement
+// It is applicable for both Web and non Web elements alert title url's
+// It is the custom one. It will be used if we want the execution to wait for some time until some condition achieved..
+//presenceOfElementLocated, visibilityOfElement, titleIs, URLtobe, alertIsPresent, elementToBeClickable		
+		
+   // Fluent wait:
+		
+	//It waits for a maximum period of time and keeps checking at particular frequency
+	//until it reaches an exception of not finding the element
+
+		/*
+		 * Syntax -
+		 * 
+		 * Wait<WebDriver> wait = new FluentWait<WebDriver>(driver) 
+		 * .withTimeout(30,SECONDS) 
+		 * .pollingEvery(5, SECONDS) 
+		 * .ignoring(NoSuchElementException.class);
+		 */
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();

@@ -16,7 +16,7 @@ WebDriver driver;
 	
 //In cross browser execution better to maintain test blocks 
 
-// parameter we should give parameter name and parametrer value parameter = "browser" value = "chrome"
+// parameter we should give parameter name and parameter value parameter = "browser" value = "chrome"
 	
     @Parameters("browser")// parameter name name = browser in xml file
     @BeforeTest

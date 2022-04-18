@@ -14,6 +14,8 @@ public class HashMap {
 		
 	  java.util.HashMap<Integer, String> maps = new java.util.HashMap<Integer,String>();
 	  
+	 
+	  
 	  
 	  maps.put(1, "Ram");
 	  maps.put(2, "Charan");
@@ -24,6 +26,7 @@ public class HashMap {
 	  
 	  System.out.println(maps.get(1));
 	  System.out.println(maps.get(89)); // if you don't have key u should get null
+	  
 	  //Entry set will give u the each pair 
 	  System.out.println("*********************");
 	  

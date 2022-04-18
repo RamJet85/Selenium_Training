@@ -8,7 +8,7 @@ public class ElementUtil {
 	//This util is not responsible for webdriver creation
 	
 	WebDriver driver;
-	// to get the drive to this class we created a const, We need driver here to use these below methods
+	// to get the driver to this class we created a const, We need driver here to use these below methods
 	
 	public ElementUtil(WebDriver driver) {
 		this.driver = driver;

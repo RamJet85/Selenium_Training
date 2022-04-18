@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class InvocationCountTestNG {
 	// If u want to execute one tc for multiple times then we should use invocationcount method
 	
-	@Test(invocationCount=10,priority=1,enabled=false)
+	@Test(invocationCount=10,priority=1,enabled=true)
 	public void creteUserTest() {
 		System.out.println("User creation");
 	}

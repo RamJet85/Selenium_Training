@@ -41,8 +41,9 @@ public class AllLinks {
 				System.out.println(ele.getAttribute("href"));
 			}
 		}
+	
+	
 	}
-
 }
 
 

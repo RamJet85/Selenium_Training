@@ -20,6 +20,7 @@ public class JavaScriptPopUp {
 		
 		driver.findElement(SignUpBtn).click();
 		
+		
 		Alert alert = driver.switchTo().alert();
 		System.out.println(alert.getText());
 		alert.accept();

@@ -8,6 +8,7 @@ public class DependsTestNG {
 	//on alphabetic order, without login method how can u go to home page 
 	// In this either u can give the priority or depends method, u can give multiple method coz dependsonmethod return String[] array
 	// Suppose if the login method is failed remaining tc's will be skipped
+	
 	@Test
 	public void loginTest() {
 		System.out.println("login");

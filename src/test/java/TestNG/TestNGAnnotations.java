@@ -13,15 +13,15 @@ import org.testng.annotations.Test;
 public class TestNGAnnotations {
 	//test cases = preconditions + steps + validations (actual vs expected) + post steps
 	//Before annotations (setup) + test steps/cases (method calling) + Assertions + close (tear down)
-//	@BeforeSuite	The @BeforeSuite annotated method will run before the execution of all the test methods in the suite.
-//	@AfterSuite	The @AfterSuite annotated method will run after the execution of all the test methods in the suite.
-//	@BeforeTest	The @BeforeTest annotated method will be executed before the execution of all the test methods of 
+//	@BeforeSuite, The @BeforeSuite annotated method will run before the execution of all the test methods in the suite.
+//	@AfterSuite, The @AfterSuite annotated method will run after the execution of all the test methods in the suite.
+//	@BeforeTest, The @BeforeTest annotated method will be executed before the execution of all the test methods of 
 	//available classes belonging to that folder. it will launch browser only once
-//	@AfterTest	The @AfterTest annotated method will be executed after the execution of all the test methods of 
+//	@AfterTest,	The @AfterTest annotated method will be executed after the execution of all the test methods of 
 	//available classes belonging to that folder.
-//	@BeforeClass	The @BeforeClass annotated method will be executed before the first method of the current class is invoked.
-//	@AfterClass	The @AfterClass annotated method will be invoked after the execution of all the test methods of the current class.
-//	@BeforeMethod	The @BeforeMethod annotated method will be executed before each test method.
+//	@BeforeClass,The @BeforeClass annotated method will be executed before the first method of the current class is invoked.
+//	@AfterClass,The @AfterClass annotated method will be invoked after the execution of all the test methods of the current class.
+//	@BeforeMethod,	The @BeforeMethod annotated method will be executed before each test method.
 //	@AfterMethod	The @AfterMethod annotated method will run after the execution of each test method.
 //	@BeforeGroups	The @BeforeGroups annotated method run only once for a group before the execution of all test cases 
 	//belonging to that group.
