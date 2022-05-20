@@ -26,7 +26,7 @@ public class AllLinks {
 		List<WebElement> Linkslist = driver.findElements(By.tagName("a"));
 		int size = Linkslist.size();
 		System.out.println("The total links are: "+size);
-		System.out.println(Linkslist.get(0).getText());
+		System.out.println("value is: "+Linkslist.get(0).getText());
 		//If we have any empty links which are not having text then we should use isempty method,only it will print which are having links
 		//Let us assume if text is empty, condition is true ! is make the entire condition as false then it is not print the text
 		//Let us assume if text is not empty, condition is false ! is make the entire condition as true then it is print the text ! will make condition is true

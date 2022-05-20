@@ -22,6 +22,7 @@ public class JavaScriptPopUp {
 		
 		
 		Alert alert = driver.switchTo().alert();
+		
 		System.out.println(alert.getText());
 		alert.accept();
 		driver.switchTo().defaultContent();

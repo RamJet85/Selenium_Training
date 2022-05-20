@@ -42,7 +42,7 @@ public class WebDriverWait {
    // Fluent wait:
 		
 	//It waits for a maximum period of time and keeps checking at particular frequency
-	//until it reaches an exception of not finding the element
+	//until it reaches an exception of not finding the element..
 
 		/*
 		 * Syntax -

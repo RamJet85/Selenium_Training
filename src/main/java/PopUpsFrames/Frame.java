@@ -20,7 +20,8 @@ public class Frame {
 		
 		// Using index it's default overloading method
 		driver.switchTo().frame(0);
-		//Using name of the frame or Id or webelement
+		
+		//Using frame name or Id or webelement
 		//driver.switchTo().frame("age");
 		By frame = By.xpath("//input[@id='age']");
 		driver.findElement(frame).sendKeys("23");

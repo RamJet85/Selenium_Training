@@ -48,6 +48,7 @@ public class MultiSelect {
 		
 		
 		if(!value[0].equalsIgnoreCase("all")){
+		
 		System.out.println(list.size());
 		
 		for(int i=0;i<list.size();i++){
